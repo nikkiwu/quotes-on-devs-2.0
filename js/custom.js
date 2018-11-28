@@ -1,6 +1,7 @@
 (function ($) {
     $(document).ready(function () {
         let lastPage = '';
+        const source = $('.source');
 
 
         $('#new-quote-button').on('click', function (event) {
@@ -19,15 +20,15 @@
                     $('.entry-title').html(post.title.rendered);
 
                     if (post._qod_quote_source !== '' && post._qod_quote_source_url !== '') {
-                        $('.source').html(', <a href="' + post._qod_quote_source_url + '" target="_blank">' + post._qod_quote_source + '</a>');
+                        source.html(', <a href="' + post._qod_quote_source_url + '" target="_blank">' + post._qod_quote_source + '</a>');
                     }
 
                     else if (post._qod_quote_source !== '' && post._qod_quote_source_url === '') {
-                        $('.source').html(', ' + post._qod_quote_source);
+                        source.html(', ' + post._qod_quote_source);
                     }
 
                     else {
-                        $('.source').html('');
+                        source.html('');
                     }
 
 
@@ -55,7 +56,7 @@
                 'content': content,
                 'source': source,
                 'source_url': sourceURL,
-                status: 'publish',
+                status: 'pending',
             };
 
             $.ajax({
