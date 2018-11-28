@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Button */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 2px solid $color__brand-main;
+  border-radius: 3px;
+  background: transparent;
+  color: $color__brand-main;
+  font-size: 1rem;
+  line-height: 1;
+  padding: .75rem 2rem;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color__brand-main, 8);
+    border-color: darken($color__brand-main, 8);
+  }
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  @include desktop {
+    @include center-block;
+  }
+}
+
+.search-submit {
+  padding: .35rem .5rem;
+  border: 0;
+  @include desktop {
+    margin: 0;
+    display: inline;
+  }
+}
+
+/* Form Field */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  border: 2px solid $color__brand-main;
+  border-radius: 3px;
+  background: $color__background-body;
+  color: $color__text-main;
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px;
+}
+
+textarea {
+  padding-left: 3px;
+  width: 100%;
+  @include tablet{
+    width: 700px;
+    @include desktop{
+      width: 600px;
+    }
+  }
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.search-form input {
+  width: 250px;
+}
+
+.search-field {
+  &:focus {
+    border-color: darken(white, 8);
+    outline: none;
+
+  }
+}

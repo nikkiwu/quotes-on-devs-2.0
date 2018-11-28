@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Page Template
+--------------------------------------------------------------*/
+
+/* Foundation */
+
+.page .entry-header,
+.archive .page-title,
+.quote-submission-wrapper .entry-title {
+  margin: 3rem 0 2.5rem 0;
+}
+
+.page {
+  h2 {
+    margin: $base__space-unit 0;
+  }
+  .post-archives ul,
+  .category-archives ul,
+  .tags-archives ul {
+    padding: 0;
+    margin: 0 0 $base__space-unit 0;
+    li {
+      display: inline;
+      margin-right: 1rem;
+      line-height: 2;
+    }
+  }
+}
+
+.archive .page-title,
+.search .page-title {
+  border-bottom: $border__dashed;
+  padding-bottom: 1.75rem;
+}
+
+/* Form Template */
+
+#quote-submission-form div {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 1rem;
+  }
+  input,
+  textarea {
+    margin-bottom: 2rem;
+  }
+  input {
+    max-width: 250px;
+    @include tablet{
+      max-width: 500px;
+    }
+    @include desktop {
+      max-width: 420px;
+    }
+  }
+}
+
+#page {
+  padding: 2.5%;
+  @include desktop{
+    padding: 0 14rem;
+  }
+}
+
+.quote-content {
+  max-width: 300px;
+  @include desktop {
+    max-width: 100%;
+  }
+}

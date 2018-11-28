@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+
+/* Center block */
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet Screen */
+
+@mixin tablet {
+  @media (min-width: $width__tablet) {
+    @content;
+  }
+}
+
+/* Desktop Screen */
+
+@mixin desktop {
+  @media (min-width: $width__desktop) {
+    @content;
+  }
+}
