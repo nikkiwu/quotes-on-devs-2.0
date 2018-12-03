@@ -16,7 +16,7 @@ get_header(); ?>
 
             <?php if (is_user_logged_in() && current_user_can('edit_posts')): ?>
 
-                <form name="quoteForm" id="quote-submission-form">
+                <form name="quoteForm" id="quote-submission-form" class="quote-submission-form">
 
                     <div class="quote-author">
                         <label for="quote-author">Author of Quote</label>

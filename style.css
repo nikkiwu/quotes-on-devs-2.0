@@ -1,9 +1,9 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Theme Name: Quotes on Devs
+Theme URI: https://github.com/nikkiwu/quotes-on-devs-2.0
+Author: Nikki Wu
+Author URI: https://github.com/nikkiwu/quotes-on-devs-2.0
+Description: A Quote on Devs Starter theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -738,7 +738,7 @@ object {
   padding-bottom: 1.75rem; }
 
 /* Form Template */
-#quote-submission-form div {
+.quote-submission-form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,24 +746,24 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #quote-submission-form div label {
+  .quote-submission-form div label {
     margin-bottom: 1rem; }
-  #quote-submission-form div input,
-  #quote-submission-form div textarea {
+  .quote-submission-form div input,
+  .quote-submission-form div textarea {
     margin-bottom: 2rem; }
-  #quote-submission-form div input {
+  .quote-submission-form div input {
     max-width: 250px; }
     @media (min-width: 620px) {
-      #quote-submission-form div input {
+      .quote-submission-form div input {
         max-width: 500px; } }
     @media (min-width: 1080px) {
-      #quote-submission-form div input {
+      .quote-submission-form div input {
         max-width: 420px; } }
 
-#page {
+.hfeed {
   padding: 2.5%; }
   @media (min-width: 1080px) {
-    #page {
+    .hfeed {
       padding: 0 14rem; } }
 
 .quote-content {

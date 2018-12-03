@@ -35,7 +35,7 @@
 
 /* Form Template */
 
-#quote-submission-form div {
+.quote-submission-form div {
   display: flex;
   flex-direction: column;
   label {
@@ -47,7 +47,7 @@
   }
   input {
     max-width: 250px;
-    @include tablet{
+    @include tablet {
       max-width: 500px;
     }
     @include desktop {
@@ -56,9 +56,9 @@
   }
 }
 
-#page {
+.hfeed {
   padding: 2.5%;
-  @include desktop{
+  @include desktop {
     padding: 0 14rem;
   }
 }

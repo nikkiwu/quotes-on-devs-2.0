@@ -19,6 +19,7 @@ ehthumbs.db
 *.rar
 *.tar
 *.zip
+*.idea
 
 # Ignore packages #
 # =============== #
